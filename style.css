@@ -1,0 +1,675 @@
+/* Reset DOM*/
+*{
+    margin: 0vh;
+    padding: 0vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+
+    --greyBackground:  rgba(181,181,181,255);
+}
+
+html {
+    scroll-behavior: smooth;
+        box-sizing: border-box;
+        /* overflow-y: hidden; */
+    
+}
+
+#navBar{
+    margin-top: -8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: var(--greyBackground);
+    position: fixed;
+    z-index: 101;
+}
+
+#companyLogoOnHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 20vw;
+    font-weight: bold;
+    font-size: 2.2vw;
+}
+
+.span1{
+    color: rgb(93, 1, 180);
+}
+
+.span2{
+    color: rgb(0, 155, 206);
+}
+
+.dropbtn{
+    display: none;
+}
+
+
+#listDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    width: 60vw;
+    height: 8vh;
+    color: rgb(93, 1, 180);
+    font-weight: bold;
+    font-size: 1.25vw;
+    /* border: 1px solid black; */
+}
+
+.list a{
+    margin-left: 3vw;
+    padding: 0vw .5vw;
+    list-style: none;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+.list a:hover{
+    color: rgb(51, 0, 99); 
+    border-bottom: .3vw solid white;
+
+}
+
+.list a:active{
+    color: rgb(112, 0, 116); 
+    border-bottom: .3vw solid white;
+
+}
+
+#loginSignUpDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 8vh;
+
+    /* border: .1vh solid black; */
+}
+
+.loginSignUpClass{
+    cursor: pointer;
+    margin: 0vw .75vw;
+    width: 7vw;
+    height: 5vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+#login{
+    background-color: blueviolet;
+    border: .3vw solid blueviolet;
+    /* padding: .5vw; */
+}
+#login:hover{
+    background-color: rgb(51, 0, 99);
+    border: .3vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#login:active{
+    background-color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+#signUp{
+    background-color: var(--greyBackground);
+    border: .3vw solid white;
+    /* padding: .5vw; */
+}
+
+#signUp:hover{
+   color: rgb(51, 0, 99);
+    border: .3vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#signUp:active{
+    color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+/* Home Poster Started from here */
+#homePoster{
+    margin-top: 8vh;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--greyBackground);
+    background-color: var(--greyBackground);
+    color: white;
+
+}
+#homeposter1{
+    width: 60%;
+
+}
+#homeposter2{
+    width: 40%;
+
+}
+
+
+
+#homePosterPara1{
+  
+    margin-left: 4.5vw;
+    margin-top: 13vh;
+    font-size: 3vw;
+}
+#homePosterPara2{
+    margin-top: .3vh;
+    margin-left: 4.5vw;
+    font-size: 2.5vw;
+}
+
+#homePosterPara3{
+    margin-top: .3vh;
+    margin-left: 4.5vw;
+    font-size: 1vw;
+    width: 20vw;
+    /* border: .1vh solid black; */
+}
+
+#homePosterButton{
+    margin-left: 4.5vw;
+    margin-top: 5vh;
+    width: 12vw;
+    height: 5vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: blueviolet;
+    font-size: .8vw;
+    cursor: pointer;
+}
+
+#homePosterButton:hover{
+    background-color: rgb(51, 0, 99);
+     border: .3vw solid rgb(51, 0, 99); 
+     /* padding: .5vw; */
+ }
+
+#homePosterButton:active{
+    background-color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+ #homePosterImage{
+    /* border: .1vh solid black; */
+    width: 100%;
+    height: 70vh;
+    opacity: 1;
+
+
+} 
+
+
+#homePosterImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('headerPoster.jpg') no-repeat center center/cover;
+    width: 39.4vw;
+    height: 69.7vh;
+    z-index: 1;
+    opacity: 1;
+    border-radius: 100vw 0vw 0vw 0vw;
+}
+
+
+/* Our Services Starts from here */
+
+#ourServices{
+    width: 100%;
+    height: 70vh;
+    /* border: .1vh solid black; */
+}
+
+
+#ourServicesHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 12vh;
+    /* border: .1vh solid white; */
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 2.2vw;
+}
+
+#ourServicesBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+ 
+    /* border: .1vh solid black; */
+}
+
+
+.ourServicesBox{
+    margin: 0vh 2vw;
+    width: 23vw;
+    height: 40vh;
+    /* border: .1vh solid black; */
+    border-radius: 2vw;
+    /* background-color: white; */
+    cursor: pointer;
+
+}
+
+.ourServicesImg{
+    height: 52%;
+
+    border-radius: 2vw 2vw 0vw 0vw;
+
+}
+
+
+
+
+#ourServicesImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('1stServicesImage.webp') no-repeat center center/cover;
+    width: 22.9vw;
+    height: 21vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('2ndServicesImage.jpg') no-repeat center center/cover;
+    width: 22.9vw;
+    height: 21vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('3rdServicesImage.jpg') no-repeat center center/cover;
+    width: 22.9vw;
+    height: 21vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+
+
+
+
+
+.ourServicesParDiv{
+    height: 48%;
+    background-color: blueviolet;
+    /* border: .1vh solid black; */
+    border-radius: 0vw 0vw 2vw 2vw;
+    width: 99.5%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8vw;
+}
+
+.ourServicesPara{
+    text-align: center;
+    width: 13vw;
+}
+
+/* This is offer section */
+
+
+
+
+
+#offerSection{
+    display: flex;
+    height: 50vh;
+    background-color: rgba(177,177,179,255);
+    /* border: .1vh solid black; */
+
+
+}
+
+#offerSectionImage{
+    width: 70vw;
+    height: 50vh;
+    /* border: .1vh solid black; */
+
+}
+
+#offerSectionImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('offerImage.jpg') no-repeat center center/cover;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 0vw 100vw 50vw 0vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+#offerSectionParaDiv{
+    display: flex;
+    align-items: center;
+    height: 50vh;
+    width: 50vw;
+    /* border: 1px solid black; */
+}
+
+
+#offerSectionPara1{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 8vw;
+    color: white;
+    /* border: 1px solid black; */
+    width: 38vw;
+}
+
+#offerSectionPara2{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 8vw;
+    color: white;
+    width: 38vw;
+}
+
+#ourClientReviews{
+    width: 100%;
+    height: 55vh;
+    /* border: .1vh solid black; */
+    color: white;
+
+}
+
+
+#ourClientReviewsHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 10vh;
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 2.2vw;
+    /* border: .1vh solid black; */
+}
+
+#ourClientReviewsBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    /* border: .1vh solid black; */
+
+}
+
+
+.ourClientReviewsBox{
+    margin: 0vh 2vw;
+    width: 23vw;
+    height: 35vh;
+    cursor: pointer;
+    
+}
+
+.imageAndName{
+    margin-top: 7.5vh;
+    height: 20vh;
+    border: 0.00001vh solid rgb(161, 17, 17);
+    background-color: blueviolet;
+    border-radius: 2vw;
+
+}
+
+.ourClientReviewsImg{
+    margin: -7.5vh auto 0vh auto;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+
+
+}
+
+#ourClientReviewsImg1{
+    width: 13.8vh;
+    height: 13.8vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client1.jpg') no-repeat center center/cover;
+    width: 12vh;
+    height: 12vh;
+    border-radius:100%;
+    margin-left: -.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg2{
+    width: 13.8vh;
+    height: 13.8vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client2.jpg') no-repeat center center/cover;
+    width: 12vh;
+    height: 12vh;
+    border-radius:100%;
+    margin-left: -.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg3{
+    width: 13.8vh;
+    height: 13.8vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client3.jpg') no-repeat center center/cover;
+    width: 12vh;
+    height: 12vh;
+    border-radius:100%;
+    margin-left: -0.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+.ourClientReviewsImgName{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2vh;
+    height: 5vh;
+    background-color: blueviolet;
+    font-size: 1.5vw;
+
+}
+
+.ourClientReviewsParDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: -6.5vh;
+    height: 15vh;
+    background-color: blueviolet;
+    padding: 1vh 1vw 0vh 1vw;
+    border-radius: 0vw 0vw 2vw 2vw;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+
+.ourClientReviewsPara{
+    width: 18vw;
+}
+
+/* Bottom Div */
+
+#bottomDiv{
+    display: flex;
+    height: 35vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 218, 218);
+    font-size: 1vw;
+}
+
+#bottomLogoAndSocialLink{
+    width: 30vw;
+    margin: 6vh 5vw 0vh 5vw;
+}
+
+#bottomLogoDiv{
+    /* border: .1vh solid black; */
+    height: 6vh;
+}
+
+.bottomSpan1{
+    padding-left: .3vw;
+    font-size: 2.75vw;
+    font-weight: bold;
+    color: rgb(93, 1, 180);
+}
+
+.bottomSpan2{
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: rgb(0, 155, 206);
+}
+
+
+
+#bottomSocialLinksDiv{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    /* border: .1vh solid black; */
+
+}
+
+
+#bottomSocialLinksUl{
+    display: flex;
+    list-style: none;  
+    margin-top: .75vh;  
+}
+
+
+.socialIcon{
+    width: 2vw;
+    margin: 0vh .25vw;
+}
+
+
+#bottomTagLine{
+    margin-top: -1.25vh;
+    display: flex;
+    align-items: center;
+    height: 4vh;
+    padding-left: .5vw;
+    /* border: .1vh solid black; */
+
+}
+
+
+#bottomOtherLinks{
+    display: flex;
+    width: 70vw;
+}
+
+
+.bottomListsDivClass{
+    margin: 7vh 10vw 0vh 5vw;
+    width: 5vw;
+}
+
+
+#bottomOtherLinks ul{
+    list-style: none;
+    
+}
+#bottomOtherLinks ul a{
+    text-decoration: none;
+    color: rgb(184, 255, 255);
+    font-weight: bold;
+    font-size: .9vw;
+
+}
+
+
+.bottomTradeList{
+    margin-top: 1vh;
+}
+.bottomLinksList{
+    margin-top: 1vh;
+}
+.bottomOtherLinksHeading{
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 1.2vw;
+
+}
+
+#contactPara{
+    margin-top: 1vh;
+    width: 10vw;
+}

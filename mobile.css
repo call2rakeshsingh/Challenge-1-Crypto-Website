@@ -1,0 +1,738 @@
+/* Reset DOM*/
+*{
+    margin: 0vh;
+    padding: 0vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+
+    --greyBackground:  rgba(181,181,181,255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navBar {
+    margin-top: -6vh;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: var(--greyBackground);
+    position: fixed;
+    z-index: 100;
+}
+
+
+
+
+
+
+
+.dropbtn {
+    display: block;
+    height: 4vh;
+    width: 10vw;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    background-color: blueviolet;
+    border-radius: 1vw;
+    z-index: 11;
+}
+
+.dropimg {
+    position: absolute;
+    display: flex;
+    height: 3.8vh;
+    width: 8vw;
+    margin-left: .9vw;
+    padding: 0px;
+    filter: invert(100%);
+    z-index: 11;
+}
+
+
+#ulNav {
+    position: absolute;
+    display: flex;
+    height: 4vh;
+    width: 10vw;
+    margin-left: 2vw;
+    padding: 0px;
+    /* border: 1px solid black; */
+}
+
+
+
+#listDiv {
+    display: none;
+    position: absolute;
+    min-width: 36vw;
+    min-height: 23vw;
+    margin-top: 0vh;
+    margin-left: 0vw;
+    padding-top: 0vh;
+    list-style: none;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+#listDiv::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(99, 0, 192);
+    min-width: 38vw;
+    padding-top: -4vh;
+    min-height: 27vh;
+    list-style: none;
+    border-radius: 0px 0px 10px 10px;
+    z-index: -10;
+    opacity: .7;
+}
+
+#list1{
+    padding-top: 4vh;
+}
+
+
+#navBar ul #listDiv a {
+    color: white;
+    padding: .5vh 1.5vw;
+
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+#navBar ul #listDiv a:active {
+    background-color: white;
+    color: black;
+}
+
+#ulNav:hover #listDiv {
+    display: block;
+}
+
+
+
+#companyLogoOnHeader{
+    display: flex;
+    margin-left: 35vw;
+    align-items: center;
+    justify-content: end;
+    height: 6vh;
+    width: 30vw;
+    font-weight: bold;
+    font-size: 5.5vw;
+    /* border: 1px solid black; */
+}
+
+.span1{
+    color: rgb(93, 1, 180);
+}
+
+.span2{
+    color: rgb(0, 155, 206);
+}
+
+
+#loginSignUpDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    height: 5vh;
+    margin-left: 6vw;
+    /* padding-left: 20vw; */
+
+    /* border: .1vh solid black; */
+}
+
+.loginSignUpClass{
+    cursor: pointer;
+    margin: 0vw 1vw 0vw 1vw;
+    width: 10vw;
+    height: 3vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2.1vw;
+    cursor: pointer;
+}
+
+#login{
+    background-color: blueviolet;
+    border: .5vw solid blueviolet;
+    /* padding: .5vw; */
+}
+#login:hover{
+    background-color: rgb(51, 0, 99);
+    border: .5vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#login:active{
+    background-color: rgb(112, 0, 116); 
+    border: .5vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+#signUp{
+    background-color: var(--greyBackground);
+    border: .5vw solid white;
+    /* padding: .5vw; */
+}
+
+#signUp:hover{
+   color: rgb(51, 0, 99);
+    border: .5vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#signUp:active{
+    color: rgb(112, 0, 116); 
+    border: .5vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+/* Home Poster Started from here */
+#homePoster{
+    margin-top: 6vh;
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    background-color: var(--greyBackground);
+    background-color: var(--greyBackground);
+    color: white;
+
+}
+#homeposter1{
+    width: 40vw;
+    z-index: 10;
+    /* border: .1vh solid black; */
+
+}
+#homeposter2{
+    width: 60vw;
+
+}
+
+
+
+#homePosterPara1{
+
+    margin-left: 2vw;
+    margin-top: 13vh;
+    font-size: 6.5vw;
+}
+#homePosterPara2{
+    /* border: .1vh solid black; */
+    width: 55vw;
+    margin-top: .5vh;
+    margin-left: 2vw;
+    font-size: 6vw;
+}
+
+#homePosterPara3{
+    /* border: .1vh solid black; */
+    width: 50vw;
+    margin-top: .5vh;
+    margin-left: 2vw;
+    font-size: 3vw;
+    /* border: .1vh solid black; */
+}
+
+#homePosterButton{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    width: 30vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: blueviolet;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+#homePosterButton:hover{
+    background-color: rgb(51, 0, 99);
+     border: .3vw solid rgb(51, 0, 99); 
+     /* padding: .5vw; */
+ }
+
+#homePosterButton:active{
+    background-color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+ #homePosterImage{
+    /* border: .1vh solid black; */
+    width: 60vw;
+    height: 55vh;
+    opacity: 1;
+
+
+} 
+
+
+#homePosterImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('headerPoster.jpg') no-repeat center center/cover;
+    width: 60vw;
+    height: 55vh;
+    z-index: 1;
+    opacity: 1;
+    border-radius: 100vw 0vw 0vw 0vw;
+}
+
+
+/* Our Services Starts from here */
+
+#ourServices{
+    width: 100%;
+    height: 41vh;
+    /* border: .1vh solid black; */
+}
+
+
+#ourServicesHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 8vh;
+    /* border: .1vh solid white; */
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 4.5vw;
+}
+
+#ourServicesBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 31vh;
+ 
+    /* border: .1vh solid black; */
+}
+
+
+.ourServicesBox{
+    margin: 0vh 1.5vw;
+    width: 27vw;
+    height: 21vh;
+    /* border: .1vh solid black; */
+    border-radius: 2vw;
+    /* background-color: white; */
+    cursor: pointer;
+
+}
+
+.ourServicesImg{
+    height: 11vh;
+    border-radius: 2vw 2vw 0vw 0vw;
+
+}
+
+
+
+
+#ourServicesImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('1stServicesImage.webp') no-repeat center center/cover;
+    width: 27vw;
+    height: 11vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('2ndServicesImage.jpg') no-repeat center center/cover;
+    width: 27vw;
+    height: 11vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('3rdServicesImage.jpg') no-repeat center center/cover;
+    width: 27vw;
+    height: 11vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+
+
+
+
+
+.ourServicesParDiv{
+    height: 10vh;
+    background-color: blueviolet;
+    border: .1vh solid black;
+    border-radius: 0vw 0vw 2vw 2vw;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2vw;
+}
+
+.ourServicesPara{
+    text-align: center;
+    width: 23vw;
+    height: 10vw;
+    /* border: 1px solid black; */
+}
+
+/* This is offer section */
+
+#offerSection{
+    display: flex;
+    height: 35vh;
+    background-color: rgba(177,177,179,255);
+    /* border: .1vh solid black; */
+
+
+}
+
+#offerSectionImage{
+    width: 70vw;
+    height: 35vh;
+    /* border: .1vh solid black; */
+
+}
+
+#offerSectionImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('offerImage.jpg') no-repeat center center/cover;
+    width: 60vw;
+    height: 35vh;
+    border-radius: 0vw 50vw 10vw 0vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+#offerSectionParaDiv{
+    display: flex;
+    align-items: center;
+    height: 35vh;
+    width: 50vw;
+    /* border: 1px solid black; */
+}
+
+#offerSectionPara1{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 9vw;
+    color: white;
+    width: 36vw;
+    /* border: 1px solid black; */
+}
+#offerSectionPara2{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 9vw;
+    width: 36vw;
+    color: white;
+}
+
+#ourClientReviews{
+    width: 100%;
+    height: 38vh;
+    /* border: .1vh solid black; */
+    color: white;
+
+}
+
+
+#ourClientReviewsHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 8vh;
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 4.5vw;
+    /* border: .1vh solid black; */
+}
+
+#ourClientReviewsBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 26vh;
+    /* border: .1vh solid black; */
+ 
+}
+
+
+.ourClientReviewsBox{
+    margin: 0vh 1.5vw;
+    width: 27vw;
+    height: 26vh;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.imageAndName{
+    margin-top: 6.5vh;
+    height: 18vh;
+    border: 0.00001vh solid blueviolet;
+    background-color: blueviolet;
+    border-radius: 2vw;
+
+}
+
+.ourClientReviewsImg{
+    margin: -4.5vh auto 0vh auto;
+    height: 13vh;
+    width: 15vh;
+    border-radius: 100%;
+
+
+}
+
+#ourClientReviewsImg1{
+    width: 9.75vh;
+    height: 9.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client1.jpg') no-repeat center center/cover;
+    width: 8vh;
+    height: 8vh;
+    border-radius:100%;
+    margin-left: -.1vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg2{
+    width: 9.75vh;
+    height: 9.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client2.jpg') no-repeat center center/cover;
+    width: 8vh;
+    height: 8vh;
+    border-radius:100%;
+    margin-left: -.1vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg3{
+    width: 9.75vh;
+    height: 9.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client3.jpg') no-repeat center center/cover;
+    width: 8vh;
+    height: 8vh;
+    border-radius:100%;
+    margin-left: -0.1vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+.ourClientReviewsImgName{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2vh;
+    height: 5vh;
+    background-color: blueviolet;
+    font-size: 2.75vw;
+
+}
+
+.ourClientReviewsParDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: -9vh;
+    height: 9vh;
+    background-color: blueviolet;
+    padding: 1vh 1vw 0vh 1vw;
+    border-radius: 0vw 0vw 2vw 2vw;
+    text-align: center;
+    font-size: 2.75vw;
+    /* border: 1px solid black; */
+}
+
+
+.ourClientReviewsPara{
+    width: 25vw;
+    /* border: 1px solid black; */
+}
+
+/* Bottom Div */
+
+#bottomDiv{
+    display: flex;
+    height: 18vh;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 218, 218);
+    font-size: 1vw;
+}
+
+#bottomLogoAndSocialLink{
+    width: 35vw;
+    margin: 3vh 5vw 0vh 5vw;
+}
+
+#bottomLogoDiv{
+    /* border: .1vh solid white; */
+    height: 5vh;
+}
+
+.bottomSpan1{
+    padding-left: .3vw;
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(93, 1, 180);
+}
+
+.bottomSpan2{
+    font-size: 5vw;
+    font-weight: bold;
+    color: rgb(0, 155, 206);
+}
+
+
+
+#bottomSocialLinksDiv{
+    display: flex;
+    align-items: center;
+    height: 3.5vh;
+    /* border: .1vh solid white; */
+
+}
+
+
+#bottomSocialLinksUl{
+    display: flex;
+    list-style: none;  
+    margin-top: 0vh;  
+}
+
+
+.socialIcon{
+    width: 4vw;
+    margin: 0vh .5vw;
+}
+
+
+#bottomTagLine{
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    padding-left: .5vw;
+    font-size: 2vw;
+    /* border: .1vh solid black; */
+
+}
+
+
+#bottomOtherLinks{
+    display: flex;
+    width: 55vw;
+       /* border: .1vh solid white; */
+}
+
+
+.bottomListsDivClass{
+    margin: 3vh 2vw 0vh 5vw;
+    width: 9vw;
+}
+
+
+#bottomOtherLinks ul{
+    list-style: none;
+    
+}
+#bottomOtherLinks ul a{
+    text-decoration: none;
+    color: rgb(184, 255, 255);
+    font-weight: bold;
+    font-size: 2vw;
+
+}
+
+
+.bottomTradeList{
+    margin-top: .75vh;
+}
+.bottomLinksList{
+    margin-top: .75vh;
+}
+.bottomOtherLinksHeading{
+    margin-top: .75vh;
+    font-weight: bold;
+    font-size: 2.3vw;
+
+}
+
+#contactPara{
+    margin-top: 1vh;
+    width: 17vw;
+    font-size: 2vw;
+    /* border: 1px solid white; */
+}

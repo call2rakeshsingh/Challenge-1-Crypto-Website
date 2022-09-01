@@ -1,0 +1,684 @@
+/* Reset DOM*/
+*{
+    margin: 0vh;
+    padding: 0vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+
+    --greyBackground:  rgba(181,181,181,255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navBar{
+    margin-top: -6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    width: 100%;
+    background-color: var(--greyBackground);
+    position: fixed;
+    z-index: 101;
+}
+
+#companyLogoOnHeader{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 6vh;
+    width: 20%;
+    font-weight: bold;
+    font-size: 3.1vw;
+    /* border: 1px solid black; */
+}
+
+.span1{
+    color: rgb(93, 1, 180);
+}
+
+.span2{
+    color: rgb(0, 155, 206);
+}
+
+
+
+
+#listDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    width: 57vw;
+    height: 6vh;
+    color: rgb(93, 1, 180);
+    font-weight: bold;
+    font-size: 1.9vw;
+}
+
+.dropbtn{
+    display: none;
+}
+
+.list a{
+    margin-left: 1.5vw;
+    padding: 0vw .5vw;
+    list-style: none;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+.list a:hover{
+    color: rgb(51, 0, 99); 
+    border-bottom: .3vw solid white;
+
+}
+
+.list a:active{
+    color: rgb(112, 0, 116); 
+    border-bottom: .3vw solid white;
+
+}
+
+#loginSignUpDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+    height: 6vh;
+
+    /* border: .1vh solid black; */
+}
+
+.loginSignUpClass{
+    cursor: pointer;
+    margin: 0vw 1vw 0vw 0vw;
+    width: 8vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#login{
+    background-color: blueviolet;
+    border: .3vw solid blueviolet;
+    /* padding: .5vw; */
+}
+#login:hover{
+    background-color: rgb(51, 0, 99);
+    border: .3vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#login:active{
+    background-color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+#signUp{
+    background-color: var(--greyBackground);
+    border: .3vw solid white;
+    /* padding: .5vw; */
+}
+
+#signUp:hover{
+   color: rgb(51, 0, 99);
+    border: .3vw solid rgb(51, 0, 99); 
+    /* padding: .5vw; */
+}
+#signUp:active{
+    color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+/* Home Poster Started from here */
+#homePoster{
+    margin-top: 6vh;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    background-color: var(--greyBackground);
+    background-color: var(--greyBackground);
+    color: white;
+
+}
+#homeposter1{
+    width: 40%;
+    /* border: .1vh solid black; */
+
+}
+#homeposter2{
+    width: 60%;
+
+}
+
+
+
+#homePosterPara1{
+
+    margin-left: 4.5vw;
+    margin-top: 13vh;
+    font-size: 5vw;
+}
+#homePosterPara2{
+    /* border: .1vh solid black; */
+    width: 50vw;
+    margin-top: .5vh;
+    margin-left: 4.5vw;
+    font-size: 4.5vw;
+}
+
+#homePosterPara3{
+    /* border: .1vh solid black; */
+    width: 40vw;
+    margin-top: .5vh;
+    margin-left: 4.5vw;
+    font-size: 2.5vw;
+    /* border: .1vh solid black; */
+}
+
+#homePosterButton{
+    margin-left: 4.5vw;
+    margin-top: 3vh;
+    width: 18vw;
+    height: 4vh;
+    border-radius: 1.5vw;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: blueviolet;
+    font-size: 1.75vw;
+    cursor: pointer;
+}
+
+#homePosterButton:hover{
+    background-color: rgb(51, 0, 99);
+     border: .3vw solid rgb(51, 0, 99); 
+     /* padding: .5vw; */
+ }
+
+#homePosterButton:active{
+    background-color: rgb(112, 0, 116); 
+    border: .3vw solid rgb(112, 0, 116); 
+    /* padding: .5vw; */
+}
+
+
+
+ #homePosterImage{
+    /* border: .1vh solid black; */
+    width: 100%;
+    height: 60vh;
+    opacity: 1;
+
+
+} 
+
+
+#homePosterImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('headerPoster.jpg') no-repeat center center/cover;
+    width: 60vw;
+    height: 60vh;
+    z-index: 1;
+    opacity: 1;
+    border-radius: 100vw 0vw 0vw 0vw;
+}
+
+
+/* Our Services Starts from here */
+
+#ourServices{
+    width: 100%;
+    height: 45vh;
+    /* border: .1vh solid black; */
+}
+
+
+#ourServicesHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 8vh;
+    /* border: .1vh solid white; */
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 3.5vw;
+}
+
+#ourServicesBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35vh;
+ 
+    /* border: .1vh solid black; */
+}
+
+
+.ourServicesBox{
+    margin: 0vh 1.5vw;
+    width: 27%;
+    height: 25vh;
+    /* border: .1vh solid black; */
+    border-radius: 2vw;
+    /* background-color: white; */
+    cursor: pointer;
+
+}
+
+.ourServicesImg{
+    height: 13vh;
+    border-radius: 2vw 2vw 0vw 0vw;
+    width: 100%;
+        /* border: .1vh solid black; */
+}
+
+
+
+
+#ourServicesImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('1stServicesImage.webp') no-repeat center center/cover;
+    width: 27vw;
+    height: 13vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('2ndServicesImage.jpg') no-repeat center center/cover;
+    width: 27vw;
+    height: 13vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+#ourServicesImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('3rdServicesImage.jpg') no-repeat center center/cover;
+    width: 27vw;
+    height: 13vh;
+    z-index: -10;
+    opacity: 1;
+    border-radius: 2vw 2vw 0vw 0vw;
+}
+
+
+
+
+
+
+.ourServicesParDiv{
+    height: 12vh;
+    background-color: blueviolet;
+    /* border: .1vh solid black; */
+    border-radius: 0vw 0vw 2vw 2vw;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+
+.ourServicesPara{
+    text-align: center;
+    width: 80%;
+    height: 8vw;
+    /* border: 1px solid black; */
+}
+
+/* This is offer section */
+
+#offerSection{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    background-color: rgba(177,177,179,255);
+    /* border: .1vh solid black; */
+
+
+}
+
+#offerSectionImage{
+    width: 70%;
+    height: 40vh;
+    /* border: .1vh solid black; */
+
+}
+
+#offerSectionImage::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('offerImage.jpg') no-repeat center center/cover;
+    width: 50vw;
+    height: 40vh;
+    border-radius: 0vw 50vw 10vw 0vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+#offerSectionParaDiv{
+    display: flex;
+    align-items: center;
+    margin-left: -14vw;
+    height: 40vh;
+    width: 36vw;
+    /* border: 1px solid black; */
+}
+
+#offerSectionPara1{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 9vw;
+    color: white;
+    width: 36vw;
+    /* border: 1px solid black; */
+}
+#offerSectionPara2{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 9vw;
+    width: 36vw;
+    color: white;
+}
+
+#ourClientReviews{
+    width: 100%;
+    height: 43vh;
+    /* border: .1vh solid black; */
+    color: white;
+
+}
+
+
+#ourClientReviewsHeadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 8vh;
+    color: rgb(0, 155, 206);
+    font-weight: bold;
+    font-size: 3.1vw;
+    /* border: .1vh solid black; */
+}
+
+#ourClientReviewsBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+    /* border: .1vh solid black; */
+ 
+}
+
+
+.ourClientReviewsBox{
+    margin: 0vh 1.5vw;
+    width: 27%;
+    height: 30vh;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+
+.imageAndName{
+    margin-top: 7.5vh;
+    height: 20vh;
+    border: 0.00001vh solid rgb(161, 17, 17);
+    background-color: blueviolet;
+    border-radius: 2vw;
+    width: 100%;
+
+}
+
+.ourClientReviewsImg{
+    margin: -4.5vh auto 0vh auto;
+    height: 15vh;
+    width: 15vh;
+    border-radius: 100%;
+
+
+}
+
+#ourClientReviewsImg1{
+    width: 10.75vh;
+    height: 10.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg1::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client1.jpg') no-repeat center center/cover;
+    width: 9vh;
+    height: 9vh;
+    border-radius:100%;
+    margin-left: -.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg2{
+    width: 10.75vh;
+    height: 10.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg2::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client2.jpg') no-repeat center center/cover;
+    width: 9vh;
+    height: 9vh;
+    border-radius:100%;
+    margin-left: -.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+#ourClientReviewsImg3{
+    width: 10.75vh;
+    height: 10.75vh;
+    border: 1vh solid rgb(255, 255, 255);
+    /* border: .1vh solid black; */
+
+}
+
+#ourClientReviewsImg3::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    background: url('client3.jpg') no-repeat center center/cover;
+    width: 9vh;
+    height: 9vh;
+    border-radius:100%;
+    margin-left: -0.05vw;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+.ourClientReviewsImgName{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 2vh;
+    height: 5vh;
+    background-color: blueviolet;
+    font-size: 2vw;
+
+}
+
+.ourClientReviewsParDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: -9vh;
+    height: 10vh;
+    background-color: blueviolet;
+    padding: 1vh 1vw 0vh 1vw;
+    border-radius: 0vw 0vw 2vw 2vw;
+    text-align: center;
+    font-size: 2vw;
+    width: 100%;
+        /* border: 1px solid black; */
+}
+
+
+.ourClientReviewsPara{
+    width: 90%;
+    /* border: 1px solid black; */
+
+}
+
+/* Bottom Div */
+
+#bottomDiv{
+    display: flex;
+    height: 23vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(218, 218, 218);
+    font-size: 1vw;
+}
+
+#bottomLogoAndSocialLink{
+    width: 30vw;
+    margin: 5vh 5vw 0vh 5vw;
+}
+
+#bottomLogoDiv{
+    /* border: .1vh solid black; */
+    height: 8vh;
+}
+
+.bottomSpan1{
+    padding-left: .3vw;
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgb(93, 1, 180);
+}
+
+.bottomSpan2{
+    font-size: 4vw;
+    font-weight: bold;
+    color: rgb(0, 155, 206);
+}
+
+
+
+#bottomSocialLinksDiv{
+    display: flex;
+    align-items: center;
+    height: 3.5vh;
+    /* border: .1vh solid black; */
+
+}
+
+
+#bottomSocialLinksUl{
+    display: flex;
+    list-style: none;  
+    margin-top: 0vh;  
+}
+
+
+.socialIcon{
+    width: 3.5vw;
+    margin: 0vh .5vw;
+}
+
+
+#bottomTagLine{
+    margin-top: 0vh;
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    padding-left: .5vw;
+    font-size: 1.5vw;
+    /* border: .1vh solid black; */
+
+}
+
+
+#bottomOtherLinks{
+    display: flex;
+    width: 70vw;
+}
+
+
+.bottomListsDivClass{
+    margin: 5vh 6vw 0vh 5vw;
+    width: 9vw;
+}
+
+
+#bottomOtherLinks ul{
+    list-style: none;
+    
+}
+#bottomOtherLinks ul a{
+    text-decoration: none;
+    color: rgb(184, 255, 255);
+    font-weight: bold;
+    font-size: 1.4vw;
+
+}
+
+
+.bottomTradeList{
+    margin-top: 1vh;
+}
+.bottomLinksList{
+    margin-top: 1vh;
+}
+.bottomOtherLinksHeading{
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 1.6vw;
+
+}
+
+#contactPara{
+    margin-top: 1vh;
+    width: 12vw;
+    font-size: 1.4vw;
+}
