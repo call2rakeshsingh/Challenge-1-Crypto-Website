@@ -688,6 +688,7 @@ html {
 .bottomListsDivClass{
     margin: 3vh 2vw 0vh 5vw;
     width: 9vw;
+    color: rgb(184, 255, 255);
 }
 
 
@@ -697,7 +698,7 @@ html {
 }
 #bottomOtherLinks ul a{
     text-decoration: none;
-    color: rgb(184, 255, 255);
+    color: rgb(218, 218, 218);
     font-weight: bold;
     font-size: 2vw;
 
