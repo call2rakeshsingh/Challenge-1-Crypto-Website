@@ -173,11 +173,7 @@ html {
     border: .5vw solid blueviolet;
     /* padding: .5vw; */
 }
-#login:hover{
-    background-color: rgb(51, 0, 99);
-    border: .5vw solid rgb(51, 0, 99); 
-    /* padding: .5vw; */
-}
+
 #login:active{
     background-color: rgb(112, 0, 116); 
     border: .5vw solid rgb(112, 0, 116); 
@@ -190,11 +186,7 @@ html {
     /* padding: .5vw; */
 }
 
-#signUp:hover{
-   color: rgb(51, 0, 99);
-    border: .5vw solid rgb(51, 0, 99); 
-    /* padding: .5vw; */
-}
+
 #signUp:active{
     color: rgb(112, 0, 116); 
     border: .5vw solid rgb(112, 0, 116); 
@@ -264,11 +256,6 @@ html {
     cursor: pointer;
 }
 
-#homePosterButton:hover{
-    background-color: rgb(51, 0, 99);
-     border: .3vw solid rgb(51, 0, 99); 
-     /* padding: .5vw; */
- }
 
 #homePosterButton:active{
     background-color: rgb(112, 0, 116); 
