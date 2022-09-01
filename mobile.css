@@ -384,7 +384,7 @@ html {
 .ourServicesParDiv{
     height: 10vh;
     background-color: blueviolet;
-    border: .1vh solid black;
+   /* border: .1vh solid black; */
     border-radius: 0vw 0vw 2vw 2vw;
     width: 100%;
     color: white;
